@@ -1,3 +1,7 @@
 body {
   --slack-color: #3f0f40;
+  --secondary-color: #49274b;
+  --border-color: 1px solid #49274b;
+  --light-color: #421f44;
+  --hover-color: #340e36;
 }

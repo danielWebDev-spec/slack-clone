@@ -7,12 +7,13 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <div className="app">
+      <Header />
+      <div className="app__body">
+        <Sidebar />
+      </div>
       <Router>
-        <Header />
         <Switch>
-          <Route path="/">
-            <Sidebar />
-          </Route>
+          <Route path="/"></Route>
         </Switch>
       </Router>
     </div>
