@@ -4,4 +4,10 @@ body {
   --border-color: 1px solid #49274b;
   --light-color: #421f44;
   --hover-color: #340e36;
+  overflow: hidden;
+}
+
+.app__body {
+  display: flex;
+  height: 100vh;
 }
