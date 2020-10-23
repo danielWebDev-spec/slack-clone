@@ -4,7 +4,7 @@ import "./Message.css";
 function Message({ message, timestamp, user, userImage }) {
   return (
     <div className="message">
-      <img src={userImage} alt="the user image" />
+      <img src={userImage} alt="the user" />
       <div className="message__info">
         <h4>
           {user}{" "}
