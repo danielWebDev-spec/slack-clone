@@ -14,9 +14,11 @@ import AddIcon from "@material-ui/icons/Add";
 import SidebarOption from "./SidebarOption";
 import "./Sidebar.css";
 import db from "../firebase";
+import { useStateValue } from "../context/StateProvider";
 
 function Sidebar() {
   const [channels, setChannels] = useState([]);
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     // Run this code ONCE when the sidebar component loads
@@ -37,7 +39,7 @@ function Sidebar() {
           <h2>Workspace</h2>
           <h3>
             <FiberManualRecordIcon />
-            Daniel
+            {user?.displayName}
           </h3>
         </div>
         <CreateIcon />
